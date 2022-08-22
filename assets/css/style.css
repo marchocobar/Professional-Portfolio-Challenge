@@ -18,21 +18,29 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
     padding: 30px; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     color: white; 
     background-color: var(--color);
-    justify-content: space-between;
     align-items: center;
 }
 
 header h1 {
+    display: inline;
    font-size: 45px;
     
 }
 
+header img {
+    height: 100px;
+    width: 100px;
+
+}
+
 nav {
     display: flex;
+    justify-content: space-between;
     padding-top: 35px;
     margin-right: 70px; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -41,9 +49,10 @@ nav {
 }
 
 nav ul li {
-    display: inline-flex;
-    margin-inline: 20px;
-}
+    display: inline;
+    padding-left: 40px;
+    /* margin-inline: 20px; */
+} 
 
 nav a {
     color: white;
@@ -111,7 +120,7 @@ main {
 }
 
 .card img {
-    border: solid 8px black;
+    border: solid 4px black;
     width: 800px;
     height: 500px;
 }
