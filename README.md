@@ -29,6 +29,6 @@ HTML and CSS
 
 ## Usage
 
-![Screenshot of deployed portfolio]()
+![Screenshot of deployed portfolio](/Images/Screen%20Shot%202022-08-25%20at%203.09.57%20PM.png)
 
-![View Website Here]()
+![View Website Here] (https://marchocobar.github.io/Professional-Portfolio-Challenge/)
