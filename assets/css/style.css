@@ -55,11 +55,22 @@ nav ul li {
 
 nav a {
     color: white;
+    text-decoration: none;
 }
 
 
 nav a:hover {
-    background-color: black;
+    text-decoration: underline overline black;
+}
+
+figure {
+    background-image: url(/Users/marbar/Documents/Professional-Portfolio-Challenge/Images/CloudySky.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid white;
+    margin: 5px;
 }
 
 
@@ -67,15 +78,12 @@ main {
     display: flex;
     width: 100%;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-    justify-content: center;
-     
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    
   }
   
-p {
-     font-size: 20px;
-  }
   
 h2 { 
     
@@ -84,27 +92,23 @@ h2 {
     padding: 40px;
     border-right: solid 5px var(--color);
     color: var(--color); 
+    flex: 0 1 15%;
       
   }
   
 .about {
     display: flex;
     align-items: center;
-    margin-bottom: 30px; 
     padding: 50px; 
-    height: 200px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-
+     
   }
+
 
 .work {
     display: flex;
-    margin-bottom: 20px; 
     padding: 50px; 
-    height: 700px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    flex-wrap: wrap;
 }
+
 
 .card {
     display: flex;
@@ -129,7 +133,6 @@ h2 {
  
 }
 
-
 .card img {
     border: solid 4px var(--color);
     width: 800px;
@@ -144,23 +147,20 @@ h2 {
     font-size: 25px
 }
 
-.card:hover {
+.card:hover, .card-2:hover {
     opacity: 0.8;
 }
 
 .contact {
     display: flex;
     align-items: center;
-   margin-bottom: 20px; 
     padding: 50px; 
-    height: 200px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    
 }
 
 .contact div ul li {
     display: inline-flex;
     font-size: 20px;
+    text-decoration: underline;
     margin-inline: 10px;
 }
 
@@ -168,26 +168,31 @@ h2 {
     color: black;
 }
 
-@media screen and (max-width: 1200px) {
-    header, main, h2, .about, .card-2, .work, .card, .contact {
+/*Media Queries*/
+
+@media screen and (max-width: 1290px) {
+   header, main, h2, .about, .card-2, .work, .card, .contact, .card img {
    display: inline-block;
    width: 100%;
         
  }
-}
-
-@media screen and (max-width:1200px) {
-   h2 {
-      
+  
+    h2 {
        border-right: none;
        border-bottom: solid 5px var(--color);
        padding: 20px;
-   }
-}
-
-@media screen and (max-width:1200px) {
+ }
+    
    .card, .card-2, .card img, .card h3 {
         
         max-width: 100%;
    }
+}
+
+@media screen and (max-width: 618px) {
+    
+    .card h3 {
+     display: none;
+   }
+   
 }
