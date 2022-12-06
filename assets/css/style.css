@@ -116,8 +116,8 @@ h2 {
     border-width: 1px;
     padding: 0px;
     margin: 20px;
-    width: 800px;
-    height: 500px;
+    width: 500px;
+    height: 300px;
 }
 
 .card-2 {
@@ -132,8 +132,8 @@ h2 {
 
 .card img {
     border: solid 4px var(--color);
-    width: 800px;
-    height: 500px;
+    width: 500px;
+    height: 300px;
 }
 
 .card h3 {
